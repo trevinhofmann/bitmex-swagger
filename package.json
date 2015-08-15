@@ -1,0 +1,11 @@
+{
+  "name": "bitmex-swagger",
+  "version": "0.0.1",
+  "description": "A node.js wrapper for the BitMEX Bitcoin derivatives exchange Swagger API",
+  "author": "Trevin Hofmann <trevinhofmann@gmail.com>",
+  "main": "index.js",
+  "dependencies": {
+    "q": "^1.4.1",
+    "swagger-client": "^2.1.2"
+  }
+}
