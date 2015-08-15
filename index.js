@@ -1,15 +1,12 @@
 'use strict';
 
 var client = require('swagger-client');
-var Q = require('q');
 
-module.exports = function(params) {
-    var deferred = Q.defer();
+module.exports = function(callback) {
     var swagger = new client({
         url: 'https://www.bitmex.com/api/explorer/resources',
         success: function() {
-            deferred.resolve(swagger);
+            callback(swagger);
         }
     });
-    return deferred.promise;
 };
