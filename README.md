@@ -15,11 +15,11 @@ npm install bitmex-swagger --save
 Usage:
 
 ```javascript
-var swagger = require('bitmex-swagger');
+var Swagger = require('bitmex-swagger');
 
-swagger(function(api) {
+Swagger(function(swagger) {
 
-    api.chat.get({count: 1, reverse: true}, function(response) {
+    swagger.chat.get({count: 1, reverse: true}, function(response) {
         var message = JSON.parse(response.data)[0];
         console.log('Here is the most recent chat message:');
         console.log(message.user + ': ' + message.message);
