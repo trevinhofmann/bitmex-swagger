@@ -22,7 +22,7 @@ var Swagger = require('bitmex-swagger');
 
 Swagger(function(swagger) {
 
-    swagger.chat.get({count: 1, reverse: true}, function(response) {
+    swagger.Chat.Chat_get({count: 1, reverse: true}, function(response) {
         var message = JSON.parse(response.data)[0];
         console.log('Here is the most recent chat message:');
         console.log(message.user + ': ' + message.message);
